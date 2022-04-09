@@ -40,7 +40,7 @@ class HomeActivity: AppCompatActivity (){
 
 
         }
-        RegistrarDocente.setOnClickListener{
+        GestionEstudiante.setOnClickListener{
             startActivity(Intent(this, GestionActivity::class.java))
 
 
