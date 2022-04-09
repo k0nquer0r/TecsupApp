@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/txtGestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="GESTION DE ESTUDIANTES"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inDni"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="20dp"
+            android:textColorHint="@color/teal_200"
+            app:layout_constraintTop_toBottomOf="@+id/txtGestion">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/white"
+                android:hint="DNI"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/purple_200"
+                android:textSize="18sp"
+
+                />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inName"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="20dp"
+            android:textColorHint="@color/teal_200"
+            app:layout_constraintTop_toBottomOf="@+id/inDni">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/white"
+                android:hint="Nombres y Apellidos"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/purple_200"
+                android:textSize="18sp"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/Modalidad"
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:hint="Modalidad de estudio"
+            android:textColorHint="@color/teal_200"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="41dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/inName"
+            tools:ignore="MissingConstraints" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="303dp"
+            android:layout_height="166dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/Modalidad"
+            tools:layout_editor_absoluteX="41dp"
+            tools:ignore="MissingConstraints">
+
+
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="radioButtonClicked"
+                android:text="Virtual"
+                />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="radioButtonClicked"
+                android:text="Presencial" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:onClick="radioButtonClicked"
+                android:text="Semipresencial" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/fecha"
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:hint="Fecha de Nacimiento"
+            android:textColorHint="@color/teal_200"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="41dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+            tools:ignore="MissingConstraints" />
+
+        <DatePicker
+            android:id="@+id/picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintTop_toBottomOf="@+id/fecha"/>
+
+        <TextView
+            android:id="@+id/sede"
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:hint="Sede"
+            android:textColorHint="@color/teal_200"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="41dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/picker"
+            tools:ignore="MissingConstraints" />
+
+        <Spinner
+            android:id="@+id/ubiSede"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            app:layout_constraintTop_toBottomOf="@+id/sede"
+            />
+
+        <TextView
+            android:id="@+id/Carrera"
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:hint="Carrera"
+            android:textColorHint="@color/teal_200"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="41dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/ubiSede"
+            tools:ignore="MissingConstraints" />
+
+        <Spinner
+            android:id="@+id/TipoCarrera"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            app:layout_constraintTop_toBottomOf="@+id/Carrera"
+            />
+
+        <CheckBox
+        android:id="@+id/tyc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:text="Acepto los términos y condiciones"
+        app:layout_constraintTop_toBottomOf="@+id/TipoCarrera"/>
+
+        <CheckBox
+            android:id="@+id/datos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:text="Deseo recibir avisos y publicidad"
+            app:layout_constraintTop_toBottomOf="@+id/tyc"/>
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="28dp"
+            android:text="Registrar"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@+id/datos"
+            tools:layout_editor_absoluteX="44dp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="28dp"
+            android:backgroundTint="@color/purple_200"
+            android:text="Limpiar"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/btn1"
+            app:layout_constraintTop_toBottomOf="@+id/datos" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--Desarrollado por @Frank-Ventura-->
+</ScrollView>
