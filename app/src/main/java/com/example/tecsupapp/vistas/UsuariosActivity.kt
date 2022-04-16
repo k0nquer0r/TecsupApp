@@ -2,15 +2,12 @@ package com.example.tecsupapp.vistas
 
 import android.content.Intent
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
-import android.widget.Spinner
 import androidx.appcompat.app.AppCompatActivity
-import com.example.tecsupapp.MainActivity
 import com.example.tecsupapp.R
-import kotlinx.android.synthetic.main.activity_login.*
+
 import kotlinx.android.synthetic.main.activity_usuarios.*
 
 class UsuariosActivity: AppCompatActivity (), AdapterView.OnItemSelectedListener {

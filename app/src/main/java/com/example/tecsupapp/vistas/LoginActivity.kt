@@ -43,7 +43,7 @@ class LoginActivity: AppCompatActivity (){
         btnRegistrar2.setOnClickListener {
             //activador
             startActivity(Intent(this, UsuariosActivity::class.java))
-            finish()
+
 
         }
 

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item1"
+        android:title="@string/menuPrimeraOpcion"/>
+    <item
+        android:id="@+id/item2"
+        android:title="@string/menuSegundaOpcion"/>
+    <item
+        android:id="@+id/item3"
+        android:title="@string/menuTerceraOpcion"/>
+    <item
+        android:id="@+id/item4"
+        android:title="@string/menuCuartaOpcion"/>
+    <item
+        android:id="@+id/item5"
+        android:title="@string/menuQuintaOpcion"/>
+</menu>

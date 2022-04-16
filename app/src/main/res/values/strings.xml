@@ -2,4 +2,23 @@
     <string name="app_name">TecsupApp</string>
     <string name="registro_usuarios">Registro de Usuarios</string>
     <string name="Rcursos">Registro de Cursos</string>
+<!--    MENU EMERGENTE -->
+    <string name="menuPrimeraOpcion">Primera Opción</string>
+    <string name="menuSegundaOpcion">Segunda Opción</string>
+    <string name="menuTerceraOpcion">Tercera Opción</string>
+    <string name="menuCuartaOpcion">Cuarta Opción</string>
+    <string name="menuQuintaOpcion">Quinta Opción</string>
+<!--    MENU DRAWER-->
+    <string name="menuDrawerLibrary">Libros</string>
+    <string name="menuDrawerSchedule">Horarios</string>
+    <string name="menuDrawerCalculator">Calculadora</string>
+    <string name="menuDrawerContactus">Contactanos</string>
+    <string name="menuDrawerClaimsBook">Libro de reclamos</string>
+    <!--    MENU DRAWER2-->
+    <string name="menuDrawerNews">Noticias</string>
+    <string name="menuDrawerCursos">Cursos</string>
+    <string name="menuDrawerTeacher">Profesores</string>
+    <string name="menuDrawerStudents">Estudiantes</string>
+    <string name="menuDrawerNotes">Notas</string>
+
 </resources>
