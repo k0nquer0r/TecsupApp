@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+   <group android:checkableBehavior="single">
+
+       <item
+           android:id="@+id/nav_library"
+           android:icon="@drawable/ic_baseline_menu_book_24"
+           android:title="@string/menuDrawerLibrary"/>
+
+       <item
+           android:id="@+id/nav_schedule"
+           android:icon="@drawable/ic_baseline_schedule_24"
+           android:title="@string/menuDrawerSchedule"/>
+
+       <item
+           android:id="@+id/nav_calculator"
+           android:icon="@drawable/ic_baseline_calculate_24"
+           android:title="@string/menuDrawerCalculator"/>
+
+       <item
+           android:id="@+id/nav_contact_us"
+           android:icon="@drawable/ic_baseline_help_24"
+           android:title="@string/menuDrawerContactus"/>
+
+       <item
+           android:id="@+id/nav_claims_book"
+           android:icon="@drawable/ic_baseline_help_24"
+           android:title="@string/menuDrawerClaimsBook"/>
+
+   </group>
+
+
+</menu>
