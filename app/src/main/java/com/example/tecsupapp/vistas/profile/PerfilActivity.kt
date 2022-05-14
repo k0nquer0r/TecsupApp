@@ -1,4 +1,4 @@
-package com.example.tecsupapp.vistas
+package com.example.tecsupapp.vistas.profile
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

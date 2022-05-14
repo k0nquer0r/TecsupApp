@@ -1,4 +1,4 @@
-package com.example.tecsupapp.vistas
+package com.example.tecsupapp.vistas.launcher
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,6 +6,7 @@ import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
 import com.example.tecsupapp.R
+import com.example.tecsupapp.vistas.login.LoginActivity
 
 class LauncherActivity : AppCompatActivity() {
 

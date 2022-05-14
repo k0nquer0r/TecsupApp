@@ -1,14 +1,12 @@
-package com.example.tecsupapp.vistas
+package com.example.tecsupapp.vistas.cursos
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.example.tecsupapp.R
-import kotlin.math.log
 
 class ActivityCursos : AppCompatActivity() {
 

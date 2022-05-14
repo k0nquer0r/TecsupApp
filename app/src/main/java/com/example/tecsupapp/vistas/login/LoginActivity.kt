@@ -1,4 +1,4 @@
-package com.example.tecsupapp.vistas
+package com.example.tecsupapp.vistas.login
 
 
 import android.content.Intent
@@ -6,8 +6,9 @@ import android.os.Bundle
 import android.util.Log
 
 import androidx.appcompat.app.AppCompatActivity
-import com.example.tecsupapp.MainActivity
 import com.example.tecsupapp.R
+import com.example.tecsupapp.vistas.students.UsuariosActivity
+import com.example.tecsupapp.vistas.home.HomeActivity
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity: AppCompatActivity (){

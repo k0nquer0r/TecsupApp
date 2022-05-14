@@ -1,4 +1,4 @@
-package com.example.tecsupapp.vistas
+package com.example.tecsupapp.vistas.students
 
 import android.os.Bundle
 import android.view.View

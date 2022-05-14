@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TecsupApp">
         <activity
-            android:name=".vistas.LauncherActivity"
+            android:name=".vistas.launcher.LauncherActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,46 +21,46 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".vistas.LoginActivity" />
+        <activity android:name=".vistas.login.LoginActivity" />
 
-        <activity android:name=".vistas.HomeActivity"/>
+        <activity android:name=".vistas.home.HomeActivity"/>
 
-        <activity android:name=".vistas.UsuariosActivity">
+        <activity android:name=".vistas.students.UsuariosActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".vistas.LoginActivity"/>
+                android:value=".vistas.login.LoginActivity"/>
 
         </activity>
 
-        <activity android:name=".vistas.RCursosActivity">
+        <activity android:name=".vistas.cursos.RCursosActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".vistas.ActivityCursos"/>
+                android:value=".vistas.cursos.ActivityCursos"/>
 
         </activity>
 
-        <activity android:name=".vistas.NewsActivity">
+        <activity android:name=".vistas.news.NewsActivity">
                 <meta-data
                     android:name="android.support.PARENT_ACTIVITY"
-                    android:value=".vistas.HomeActivity"/>
+                    android:value=".vistas.home.HomeActivity"/>
         </activity>
 
-        <activity android:name=".vistas.ActivityCursos">
+        <activity android:name=".vistas.cursos.ActivityCursos">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".vistas.HomeActivity"/>
+                android:value=".vistas.home.HomeActivity"/>
         </activity>
 
-        <activity android:name=".vistas.PerfilActivity">
+        <activity android:name=".vistas.profile.PerfilActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".vistas.HomeActivity"/>
+                android:value=".vistas.home.HomeActivity"/>
         </activity>
 
-        <activity android:name=".vistas.GestionActivity">
+        <activity android:name=".vistas.students.GestionActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".vistas.HomeActivity"/>
+                android:value=".vistas.home.HomeActivity"/>
         </activity>
 
     </application>
