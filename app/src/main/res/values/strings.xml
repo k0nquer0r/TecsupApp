@@ -12,6 +12,7 @@
     <string name="menuDrawerLibrary">Libros</string>
     <string name="menuDrawerSchedule">Horarios</string>
     <string name="menuDrawerCalculator">Calculadora</string>
+    <string name="menuDrawerContact">Contactos</string>
     <string name="menuDrawerContactus">Contactanos</string>
     <string name="menuDrawerClaimsBook">Libro de reclamos</string>
     <!--    MENU DRAWER2-->

@@ -13,8 +13,10 @@ import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
 import com.example.tecsupapp.R
 import com.example.tecsupapp.vistas.book.BookFragment
+import com.example.tecsupapp.vistas.contact.ContactFragment
 import com.example.tecsupapp.vistas.courses.CoursesFragment
 import com.example.tecsupapp.vistas.main.MainFragment
+import com.example.tecsupapp.vistas.note.NoteFragment
 import com.example.tecsupapp.vistas.profile.PerfilActivity
 import kotlinx.android.synthetic.main.activity_home.*
 
@@ -81,6 +83,10 @@ class HomeActivity: AppCompatActivity (){
                     Toast.makeText(this,"Opción de calculadora", Toast.LENGTH_SHORT).show()
                     true
                 }
+                R.id.nav_contact -> {
+                    openFragment(ContactFragment.newInstance())
+                    true
+                }
                 R.id.nav_contact_us -> {
                     Toast.makeText(this,"Opción de contactanos", Toast.LENGTH_SHORT).show()
                     true
@@ -116,7 +122,7 @@ class HomeActivity: AppCompatActivity (){
                     true
                 }
                 R.id.nav_Notes -> {
-                    Toast.makeText(this,"Opción de Notas", Toast.LENGTH_SHORT).show()
+                    openFragment(NoteFragment.newInstance())
                     true
                 }
                 R.id.nav_contact_us -> {
