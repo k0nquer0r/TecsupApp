@@ -5,6 +5,7 @@ import androidx.lifecycle.LiveData
 import com.example.tecsupapp.DataBase.TecsupRoomDataBase
 import com.example.tecsupapp.model.Contact
 import com.example.tecsupapp.model.Dao.ContactDao
+import com.example.tecsupapp.model.Nota
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
@@ -23,6 +24,31 @@ class ContactRepository(application: Application) {
     private suspend fun processInsertContact(contact: Contact){
         withContext(Dispatchers.Default){
             contactDao?.insert(contact)
+        }
+    }
+
+    //Actualizar
+
+    suspend fun updateContactWithCoroutines(contact: Contact) {
+        processUpdateContact(contact)
+    }
+
+    private suspend fun processUpdateContact(contact: Contact) {
+        withContext(Dispatchers.Default) {
+            contactDao?.update(contact)
+        }
+    }
+
+
+    //Eliminar
+
+    suspend fun deleteContactWithCoroutines(contact: Contact){
+        processDeleteContact(contact)
+    }
+
+    private suspend fun processDeleteContact(contact: Contact){
+        withContext(Dispatchers.Default){
+            contactDao?.delete(contact)
         }
     }
 }

@@ -15,6 +15,6 @@ interface ContactDao {
 
     @Query("SELECT * FROM contact_table ORDER BY contact_id DESC")
     fun getListContact():LiveData<List<Contact>>
-    @Query("UPDATE contact_table SET fullname_contact=:fullname, phonenumber_contact=:phonenumber, email_contact=:email WHERE contact_id=:id ")
-    fun update(fullname: String, phonenumber: String, email: String, id: Int)
+    @Query("UPDATE contact_table SET fullname_contact=:fullname, phonenumber_contact=:phonenumber, email_contact=:email , address_contact=:address WHERE contact_id=:id ")
+    fun update(fullname: String, phonenumber: String, email: String, address: String, id: Int)
 }

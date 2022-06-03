@@ -12,7 +12,9 @@ data class Contact (
     @ColumnInfo(name = "phonenumber_contact")
     val phonenumber: String,
     @ColumnInfo(name = "email_contact")
-    val email: String
+    val email: String,
+    @ColumnInfo(name = "address_contact")
+    val address: String
 ){
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "contact_id")

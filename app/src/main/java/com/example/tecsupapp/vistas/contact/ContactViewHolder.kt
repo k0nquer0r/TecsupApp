@@ -14,16 +14,19 @@ class ContactViewHolder (inflater: LayoutInflater, parent: ViewGroup):
     private var textfullname: TextView? = null
     private var textphonenumber: TextView? = null
     private var textemail: TextView? = null
+    private var textaddress: TextView? = null
 
     init {
         textfullname = itemView.findViewById(R.id.textfullname)
         textphonenumber = itemView.findViewById(R.id.textphonenumber)
         textemail = itemView.findViewById(R.id.textemail)
+        textaddress = itemView.findViewById(R.id.textaddress)
     }
 
     fun bind(contact: Contact){
         textfullname?.text = contact.fullname
         textphonenumber?.text = contact.phonenumber
         textemail?.text = contact.email
+        textaddress?.text = contact.address
     }
 }

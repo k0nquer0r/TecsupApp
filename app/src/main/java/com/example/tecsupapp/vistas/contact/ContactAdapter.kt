@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.tecsupapp.model.Contact
 
 
-class ContactAdapter: RecyclerView.Adapter<ContactViewHolder>() {
+class ContactAdapter(val mItemClickListener: ItemClickListener): RecyclerView.Adapter<ContactViewHolder>() {
 
     private var contactList = emptyList<Contact>()
 
@@ -23,8 +23,16 @@ class ContactAdapter: RecyclerView.Adapter<ContactViewHolder>() {
     override fun onBindViewHolder(holder: ContactViewHolder, position: Int) {
         val contact: Contact = contactList[position]
         holder.bind(contact)
+        holder.bind(contact)
+        holder.itemView.setOnClickListener{
+            mItemClickListener.onItemClick(contact)
+        }
     }
 
     override fun getItemCount(): Int = contactList.size
+
+    interface ItemClickListener{
+        fun onItemClick(contact: Contact)
+    }
 
 }
